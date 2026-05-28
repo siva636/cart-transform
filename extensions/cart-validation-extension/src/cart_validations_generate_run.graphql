@@ -1,7 +1,11 @@
 query Input {
   cart {
     lines {
+      id
       quantity
+      config: attribute(key: "_config") {
+        value
+      }
     }
   }
 }
